@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout :: header">
+</head>
+<body>
+	<div th:replace="layout :: menu"></div>
+	
+	<form action="addUser" method="get">
+		<div>Nombre:<input type="text" name="name"/></div>
+		<div>Apellido:<input type="text" name="surname"/></div>
+		<input type="submit" value="Aceptar"/>
+	</form>
+	
+	<div th:replace="layout :: footer"></div>
+</body>
+</html>
