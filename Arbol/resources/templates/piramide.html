@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Pirámide Poblacional</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../static/css/piramide.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="cargar.html">CacoFran</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Cargar Persona</a></li>
+        <li><a href="/listar">Listar Personas</a></li>
+        <li><a href="/piramide">Generar Pirámide Poblacional</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    
+    <div class="col-sm-8 text-left"> 
+      <h1>Pirámide Poblacional</h1><br/>
+<div class="nativos">
+      <h2>Nativos</h2>
+    <div class="verde">
+      <progress th:value="${userHN79}" max="10">10 %</progress>
+      <progress th:value="${userHN69}" max="10">10 %</progress>
+      <progress th:value="${userHN59}" max="10">10 %</progress>
+      <progress th:value="${userHN49}" max="10">10 %</progress>
+      <progress th:value="${userHN39}" max="10">10 %</progress>
+      <progress th:value="${userHN29}" max="10">10 %</progress>
+      <progress th:value="${userHN19}" max="10">10 %</progress>
+      <progress th:value="${userHN9}" max="10">10 %</progress>
+
+
+    </div>
+
+<div class="rojo">
+        +80<br/>
+        69-60<br/>
+        59-50<br/>
+        49-40<br/>
+        39-30<br/>
+        29-20<br/>
+        19-10<br/>
+        9-0<br/>
+      </div>
+
+    <div class="azul">
+      <progress th:value="${userMN79}" max="10">10 %</progress>
+      <progress th:value="${userMN69}" max="10">10 %</progress>
+      <progress th:value="${userMN59}" max="10">10 %</progress>
+      <progress th:value="${userMN49}" max="10">10 %</progress>
+      <progress th:value="${userMN39}" max="10">10 %</progress>
+      <progress th:value="${userMN29}" max="10">10 %</progress>
+      <progress th:value="${userMN19}" max="10">10 %</progress>
+      <progress th:value="${userMN9}" max="10">10 %</progress>
+    </div>
+
+</div>
+
+<br/>
+<div class="Extranjeros">
+<h2>Extranjeros</h2>
+    <div class="verde">
+      <progress th:value="${userHE79}" max="10">10 %</progress>
+      <progress th:value="${userHE69}" max="10">10 %</progress>
+      <progress th:value="${userHE59}" max="10">10 %</progress>
+      <progress th:value="${userHE49}" max="10">10 %</progress>
+      <progress th:value="${userHE39}" max="10">10 %</progress>
+      <progress th:value="${userHE29}" max="10">10 %</progress>
+      <progress th:value="${userHE19}" max="10">10 %</progress>
+      <progress th:value="${userHE9}" max="10">10 %</progress>
+
+
+    </div>
+
+<div class="rojo">
+        +80<br/>
+        79-60<br/>
+        59-50<br/>
+        49-40<br/>
+        39-30<br/>
+        29-20<br/>
+        19-10<br/>
+        9-0<br/>
+      </div>
+
+    <div class="azul">
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+      <progress th:value="${userME9}" max="10">10 %</progress>
+    </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

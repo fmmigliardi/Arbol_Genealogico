@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta charset="ISO-8859-1" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="stylesheet" href="static/css/style.css" />
+<link rel="stylesheet" type="text/css"
+	href="webjars/bootstrap/4.1.1/css/bootstrap.min.css" />
+<title>MVC</title>
+</head>
+<body>
+
+	<div th:fragment="menu">
+		<ul>
+			<li><a href="/">Alta de usuario</a></li>
+			<li><a href="/listar">Listar usuarios</a></li>
+		</ul>
+	</div>
+
+	<div th:fragment="footer">
+		<div class="container-fluid">
+			<footer>
+				<script type="text/javascript"
+					src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+				<script type="text/javascript"
+					src="webjars/popper.js/1.14.1/popper.min.js"></script>
+				<script type="text/javascript"
+					src="webjars/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+				<script type="text/javascript" src="static/js/app.js"></script>
+			</footer>
+		</div>
+	</div>
+
+	<div th:fragment="lista(users, style, htmlclass)">
+		<table>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellido</th>
+			</tr>
+			<tr th:each="user : ${users}" th:classappend="${htmlclass}">
+				<td th:text="${user.getNombre()}" th:style="${style}" th:attr="id=${user.getNombre()}"></td>
+				<td th:text="${user.getApellido()}"  th:style="${style}"></td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

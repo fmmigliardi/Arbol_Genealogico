@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	font-family: Verdana;
+	font-style: normal;
+	font-stretch: condensed;
+	background: #222;
+
+}
+
+.imagenLogo {
+	padding: 4px 4px;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+.perfil {
+
+	background-color: rgba(173, 173, 173, 0.57);
+	width: 12%;
+	padding:5%;
+	border: double;
+}
+
+.imagenLogooo{
+	width: 130%;
+	height: auto;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+.row.content {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../family2.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+}
+    
+.sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+      background: grey;
+    }
+    
+footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+@media screen and (max-width: 767px) {
+.sidenav {
+        height: auto;
+        padding: 15px;
+      }
+.row.content {height:auto;} 
+    }
+
+
+.listar{
+  font-weight: bold;
+  color: black;
+}
+
+.editar{
+  color: black;
+}
+
+.editar{
+  background-color: rgba(158,158,158,0.7);
+  border: outset;
+  border-color: rgba(158,158,158,0.7);
+  float: left;
+  clear: left;
+  height: 50px;
+  width: auto;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rela{
+  background-color: rgba(158,158,158,0.7);
+  border: outset;
+  border-color: rgba(158,158,158,0.7);
+  float: left;
+  clear: left;
+  height: 50px;
+  width: auto;
+  padding: 10px;
+  margin: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
